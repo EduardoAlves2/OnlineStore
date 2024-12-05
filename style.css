@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(105, 158, 255);
+}
+
+header, div, main, footer {
+    display: flex;
+    flex-direction: column;
+    margin: 3px 0px 3px 0px;
+}
+
+header {
+    margin-top: 0;
+}
+
+.cabeçalho {
+    background-image: linear-gradient( to right, rgb(91, 156, 255), rgb(184, 210, 255));
+    height: 60px;
+    flex: 1 1 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo, .perfil {
+    padding: 0rem 2rem 0rem 2rem;
+    margin: 0px 10px 0px 10px;
+    max-width: 5rem;
+}
+
+a {
+    color: inherit;
+}
+
+.perfil {
+    padding-left: 0;
+}
+
+input {
+    border-radius: 10px;
+    border: none;
+    height: 20px;
+    max-width: 25rem;
+    flex-grow: 1;
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+.menu {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+.departamento-menu {
+    padding: 0rem 2rem 0rem 2rem;
+    margin: 0px 10px 0px 10px;
+    max-width: 5rem;
+}
+
+.banner {
+    height: 300px;
+    flex: 1 1 100vh;
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+main {
+    height: calc( 100vh - 224px);
+    flex: 1 1 100vh;
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+footer {
+    height: 100px;
+    flex: 1 1 100vh;
+    background-color: rgb(255, 255, 255, 0.3);
+    margin-bottom: 0;
+}
