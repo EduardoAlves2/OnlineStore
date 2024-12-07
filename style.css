@@ -6,7 +6,8 @@
 }
 
 body {
-    background-color: rgb(105, 158, 255);
+    background-image: radial-gradient(circle 1000px at 10px top,
+     rgb(255, 219, 88), rgb(255, 124, 36), rgb(144, 92, 255), rgb(107, 97, 255));
 }
 
 header, div, main, footer {
@@ -20,7 +21,7 @@ header {
 }
 
 .cabeçalho {
-    background-image: linear-gradient( to right, rgb(91, 156, 255), rgb(184, 210, 255));
+    background-color: rgb(255, 255, 255, 0.3);
     height: 60px;
     flex: 1 1 100vh;
     display: flex;
@@ -43,13 +44,19 @@ a {
     padding-left: 0;
 }
 
-input {
-    border-radius: 10px;
-    border: none;
+.pesquisa-menu {
+    display: flex;
+    margin-left: 10rem;
+}
+
+.barra-pesquisa {
+    border-radius: 7px;
+    border: 2px solid rgb(255, 255, 255, 0.3);
     height: 20px;
-    max-width: 25rem;
+    width: 20rem;
     flex-grow: 1;
     background-color: rgb(255, 255, 255, 0.3);
+    outline: none;
 }
 
 .menu {
@@ -57,25 +64,101 @@ input {
     display: flex;
     align-items: center;
     flex-direction: row;
+    justify-content: center;
     background-color: rgb(255, 255, 255, 0.3);
 }
 
-.departamento-menu {
+.depart-menu {
+    cursor: pointer;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.depart-menu:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.depart-text {
     padding: 0rem 2rem 0rem 2rem;
     margin: 0px 10px 0px 10px;
     max-width: 5rem;
+    display: flex;
+    justify-items: center;
 }
 
 .banner {
     height: 300px;
     flex: 1 1 100vh;
     background-color: rgb(255, 255, 255, 0.3);
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.botoesbanner {
+    display: flex;
+    flex-direction: row;
+    height: 10px;
+}
+
+.botoes {
+    accent-color: rgb(255, 255, 255, 0.3);
 }
 
 main {
-    height: calc( 100vh - 224px);
     flex: 1 1 100vh;
     background-color: rgb(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: row;
+}
+
+.caixalateral {
+    width: 300px;
+    margin-right: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+.areaproduto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-left: 100px;
+    padding-left: 2rem;
+    margin-right: 100px;
+    padding-right: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.caixaproduto {
+    height: 310px;
+    width: 250px;
+    margin: 2rem;
+    background-color: rgb(255, 255, 255, 0.3);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.imagem {
+    height: 200px;
+    width: 100%;
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: lightgray;
+    align-items: center;
+    justify-content: center; 
+}
+
+.nomeproduto, .notaproduto, .precoproduto {
+    background-color: lightgray;
+    margin: 10px 0 0 0;
+    height: 20px;
 }
 
 footer {
