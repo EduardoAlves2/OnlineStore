@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Righteous&family=Sarala:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     user-select: none;
     text-decoration: none;
+    color: rgb(27, 31, 82);
+    font-family: "Quicksand", sans-serif;
 }
 
 body {
-    background-image: radial-gradient(circle 1000px at 10px top,
+    background-image: radial-gradient(circle 1200px at 150px top,
      rgb(255, 219, 88), rgb(255, 124, 36), rgb(144, 92, 255), rgb(107, 97, 255));
 }
 
@@ -23,17 +27,29 @@ header {
 .cabeçalho {
     background-color: rgb(255, 255, 255, 0.3);
     height: 60px;
-    flex: 1 1 100vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoheader {
+    margin-left: 40px;
+    padding-left: 3rem;
     align-items: center;
 }
 
-.logo, .perfil {
-    padding: 0rem 2rem 0rem 2rem;
-    margin: 0px 10px 0px 10px;
-    max-width: 5rem;
+.cadastroheader {
+    display: flex;
+    flex-direction: row;
+    margin: 0 40px 0 0;
+    padding: 0 3rem 0 0;
+}
+
+.cadastro {
+    margin: 0 1rem 0 0;
+    border-right: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 0 1rem 0 0;
 }
 
 a {
@@ -45,18 +61,22 @@ a {
 }
 
 .pesquisa-menu {
+    border: 2px solid rgb(255, 255, 255, 0.3);
+    border-radius: 3px;
     display: flex;
     margin-left: 10rem;
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+.inputmenu {
+    display: flex;
+    flex-direction: row;
 }
 
 .barra-pesquisa {
-    border-radius: 7px;
-    border: 2px solid rgb(255, 255, 255, 0.3);
-    height: 20px;
-    width: 20rem;
-    flex-grow: 1;
-    background-color: rgb(255, 255, 255, 0.3);
+    background-color: transparent;
     outline: none;
+    border: none;
 }
 
 .menu {
@@ -74,6 +94,10 @@ a {
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+}
+
+.depart-text {
+    justify-content: center;
 }
 
 .depart-menu:hover {
@@ -118,7 +142,90 @@ main {
     margin-right: 2rem;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.modosentrega {
+    background-color: rgb(255, 255, 255, 0.5);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: 0;
+}
+
+.modosentrega h3, .marcas h3 {
+    margin-left: 0.5rem;
+}
+
+.frete, .entrega {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.labelfrete, .checkboxfrete, .labelentrega, .checkboxentrega {
+    justify-content: center;
+}
+
+.labelfrete {
+    margin-left: 2rem;
+}
+
+.checkboxfrete {
+    margin-right: 1rem;
+}
+
+.labelentrega, .labelmarca1, .labelmarca2, .labelmarca3,
+.labelmarca4, .labelmarca5 {
+    margin-left: 2rem;
+}
+
+.checkboxentrega, .inputmarca1, .inputmarca2, .inputmarca3,
+.inputmarca4, .inputmarca5 {
+    margin-right: 1rem;
+}
+
+.marcas {
+    background-color: rgb(255, 255, 255, 0.5);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: 1rem;
+}
+
+.container-wrapper {
     background-color: rgb(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(255, 255, 255, 0.3);
+    border-radius: 3px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 40px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.input-wrapper i, .inputmenu i {
+    color: rgb(81, 81, 120);
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 5px;
+}
+
+.inputsearchmarca {
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.marca1, .marca2, .marca3, .marca4, .marca5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .areaproduto {
@@ -162,8 +269,42 @@ main {
 }
 
 footer {
-    height: 100px;
-    flex: 1 1 100vh;
-    background-color: rgb(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.5);
     margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer .logofooter {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+footer .logoback {
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-left: 40px;
+    width: 200px;
+    background-image: radial-gradient(circle 130px,
+    rgb(255, 219, 88), rgb(255, 124, 36), rgb(144, 92, 255));
+}
+
+.departfooter, .centralfooter, .servicofooter, .contatofooter {
+    align-items: center;
+    height: 150px;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 0 2rem 0 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.contatofooter {
+    margin-right: 40px;
 }

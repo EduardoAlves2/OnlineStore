@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <title>Online Store</title>
 </head>
 <body>
     <header class="cabeçalho">
-        <a class="logo" href="#">LOGO</a>
-        <a class="perfil" href="">Perfil</a>
+        <div class="logoheader">
+            <h1 class="logo" href="#">RISING</h1>
+            <span>Imports</span>
+        </div>
+        <div class="cadastroheader">
+            <a class="cadastro" href="">Cadastrar</a>
+            <a class="Entrar" href="">Entrar</a>
+        </div>
     </header>
     <div class="menu">
         <div class="depart-menu">
@@ -25,7 +32,12 @@
             <a class="depart-text" href="">Eletrodoméstico</a>
         </div>
         <div class="pesquisa-menu">
-            <input class="barra-pesquisa" placeholder="digite aqui..." type="text" name="pesquisa" id="pesquisa">
+            <div class="containersearch">
+                <div class="inputmenu">
+                    <i class="fa fa-search"></i>
+                    <input class="barra-pesquisa" placeholder="digite aqui..." type="search" id="pesquisa">
+                </div>
+            </div>        
         </div>
     </div>
     <div class="banner">
@@ -37,9 +49,79 @@
         </div>
     </div>
     <main>
-        <div class="caixalateral">
-            
-        </div>
+        <aside class="caixalateral">
+            <div class="modosentrega">
+                <h3>Entregas</h3>
+                <div class="frete">
+                    <div class="labelfrete">
+                        <label>Frete grátis</label>
+                    </div>
+                    <div class="checkboxfrete">
+                        <input type="checkbox">
+                    </div>
+                </div>
+                <div class="entrega">
+                    <div class="labelentrega">
+                        <label>Entrega flesh</label>
+                    </div>
+                    <div class="checkboxentrega">
+                        <input type="checkbox">
+                    </div>
+                </div>
+            </div>
+            <div class="marcas">
+                <h3>Marcas</h3>
+                <div class="container-wrapper">
+                    <div class="container">
+                        <div class="input-wrapper">
+                            <i class="fa fa-search"></i>
+                            <input class="inputsearchmarca" type="search" placeholder="Buscar marcas">
+                        </div>    
+                    </div>
+                </div>
+                <div class="marca1">
+                    <div class="labelmarca1">
+                        <label class="labelmarca1.1">Marca 01</label>
+                    </div>
+                    <div>
+                        <input class="inputmarca1" type="checkbox">
+                    </div>
+                </div>
+                <div class="marca2">
+                    <div class="labelmarca2">
+                        <label class="labelmarca2.2">Marca 02</label>
+                    </div>
+                    <div>
+                        <input class="inputmarca2" type="checkbox">
+                    </div>
+                </div>
+                <div class="marca3">
+                    <div class="labelmarca3">
+                        <label class="labelmarca3.3">Marca 03</label>
+                    </div>
+                    <div>
+                        <input class="inputmarca3" type="checkbox">
+                    </div>
+                </div>
+                <div class="marca4">
+                    <div class="labelmarca4">
+                        <label class="labelmarca4.4">Marca 04</label>
+                    </div>
+                    <div>
+                        <input class="inputmarca4" type="checkbox">
+                    </div>
+                </div>
+                <div class="marca5">
+                    <div class="labelmarca5">
+                        <label class="labelmarca5.5">Marca 05</label>
+                    </div>
+                    <div>
+                        <input class="inputmarca5" type="checkbox">
+                    </div>
+                </div>
+            </div>    
+
+        </aside>
         <div class="areaproduto">
             <div class="caixaproduto">
                 <div class="imagem">imagem</div>
@@ -91,6 +173,41 @@
             </div>
         </div>    
     </main>
-    <footer>Rodapé</footer>
+    <footer>
+        <div class="logoback">
+            <div class="logofooter">
+                <h1 class="logo" href="#">RISING</h1>
+                <span>Imports</span>
+            </div>
+        </div>    
+        <div class="departfooter">
+            <h4>Departamentos</h4>
+            <a href="">Tecnologia</a>
+            <a href="">Casa</a>
+            <a href="">Escritório</a>
+            <a href="">Eletrodoméstico</a>
+        </div>
+        <div class="centralfooter">
+            <h4>Central de atendimento</h4>
+            <a href="">Atendimento</a>
+            <a href="">Termo de compra e venda</a>
+            <a href="">Trocas e devolução</a>
+            <a href="">Meus pedidos</a>
+        </div>
+        <div class="servicofooter">
+            <h4>Serviços</h4>
+            <a href="">Cartão Rising</a>
+            <a href="">Lista de casamento</a>
+            <a href="">Chá de bebê</a>
+            <a href="">Rising seguros</a>
+        </div>    
+        <div class="contatofooter">
+            <h4>Compre pelo telefone</h4>
+            <h2>0800 000 0000</h2>
+            <a href="">Segunda a sexta das 8h às 22h e sabados<br>
+                e domingos das 8h às 20h (exceto feriados)
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
